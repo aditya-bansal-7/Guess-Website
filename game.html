@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p>Choose a difficulty:</p>
+        <select id="difficulty" onchange="setDifficulty()">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <p>Guess a number between <span id="minRange">1</span> and <span id="maxRange">100</span>:</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+        <p>Attempts: <span id="attempts">0</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Number : <span id="sec_num">0</span></p>
+
+        <button onclick="main_menu()" id="back_button">Back</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Congratulations! You guessed the correct number!</p>
+            <p>Your score: <span id="modalScore">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
