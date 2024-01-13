@@ -1,6 +1,37 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #3498db, #2c3e50) no-repeat center center fixed;
+}
+
+.nav-bar {
+    height: 40px;
+    /* background-color: #1cdd15; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.nav-bar button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    height: 38px;
+    border: 2px solid transparent;
+}
+
+.nav-bar h2 {
+    width: 90%;
+}
+
+.nav-bar button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+}
+main {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -9,8 +40,8 @@ body {
     margin: 0;
 }
 
-
 .container {
+    
     text-align: center;
     background: linear-gradient(135deg, #3498db, #6a89cc);
     padding: 30px;
@@ -19,16 +50,26 @@ body {
     color: #fff;
 }
 
-img {
-    display: block;
-    
+/* img {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     border-radius: 50%;
+} */
+
+.guess-box {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-button {
+.guess-box img {
+    width: 15%;
+}
+
+main button {
     padding: 14px 28px;
     margin-top: 20px;
     cursor: pointer;
@@ -40,7 +81,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+main button:hover {
     background-color: #219e54;
 }
 
