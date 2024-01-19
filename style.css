@@ -39,7 +39,23 @@ main {
     height: 100vh;
     margin: 0;
 }
+.main-box {
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.img-box {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+.img-box img {
+    margin-left: 32%;
+    left: 50%;
+    height: 100px;
+}
 .container {
     
     text-align: center;
