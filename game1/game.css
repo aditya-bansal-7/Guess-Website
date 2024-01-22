@@ -5,7 +5,6 @@ body {
 
 .nav-bar {
     height: 40px;
-    /* background-color: #1cdd15; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -104,10 +103,16 @@ main button {
     transition: background-color 0.3s ease;
 }
 
+.difficulty {
+    background-color: transparent;
+    border: px solid #27ae60;
+}
+#medium {
+    background-color: #27ae60;
+}
 main button:hover {
     background-color: #219e54;
 }
-
 
 
 input {
@@ -138,7 +143,7 @@ select {
     font-size: 16px;
     margin-top: 10px;
     color: #333;
-    background-color: #1d55cd;
+    background-color: #fff;
 }
 
 .modal {
@@ -197,6 +202,10 @@ footer {
     text-align: center;
     color: white;
     font-size: 30px;
+}
+
+option {
+    background-color: #52b9fe;
 }
 
 @media only screen and (max-width: 600px) {
