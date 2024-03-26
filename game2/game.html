@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>PIN Guess Mode</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="mainlogo"></div>
+        <button onclick="backtomain()">Back</button>
+        <div class="github-button">
+            <a href="https://github.com/aditya-bansal-7/Guess-Website" target="_blank"><button>github</button></a>
+        </div>
+        <h2 id="name">ATM Guessing</h2>
+        <div class="mainlogo"></div>
+        <button>Help</button>
+        <div class="github-button">
+            <a href="https://t.me/bnsl_boy" target="_blank"><button>contact</button></a>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1>Guess The ATM PIN </h1>
+            <p>Guess a 4 digit number : </p>
+            <input type="number" id="pinInput1" min="0" max="9">
+            <input type="number" id="pinInput2" min="0" max="9">
+            <input type="number" id="pinInput3" min="0" max="9">
+            <input type="number" id="pinInput4" min="0" max="9">
+            <h6></h6>
+            <button onclick="checkPIN()">Submit Guess</button>
+            <p id="message"></p>
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Score: <span id="score">0</span></p>
+            <p>PIN : <span id="pin">0</span></p>
+
+            <button onclick="main_menu()" id="back_button">Back</button>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Congratulations! You guessed the correct number!</p>
+            <p>Your score: <span id="modalScore">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
