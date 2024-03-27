@@ -63,7 +63,6 @@ main {
     height: 100px;
 }
 .container {
-    
     text-align: center;
     background: linear-gradient(135deg, #3498db, #6a89cc);
     padding: 30px;
@@ -72,6 +71,33 @@ main {
     color: #fff;
 }
 
+.help-box {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    display: none;
+    text-align: center;
+    background: linear-gradient(135deg, #3498db, #6a89cc);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.greenbox {
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.greenbox p {
+    margin-left: 1rem;
+}
 /* img {
     margin-left: auto;
     margin-right: auto;
@@ -102,7 +128,20 @@ main button {
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
-
+.help-box button {
+    padding: 14px 28px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.h-box {
+    left: 0%;
+}
 .difficulty {
     background-color: transparent;
     border: px solid #27ae60;
@@ -209,6 +248,14 @@ option {
     background-color: #52b9fe;
 }
 
+.greenz {
+    background-color: #27ae60;
+    color: white;
+}
+
+.yellowz {
+    background-color: #F5DD61;
+}
 @media only screen and (max-width: 600px) {
     .container {
         padding: 20px;
@@ -217,6 +264,9 @@ option {
     .nav-bar h2 {
         margin-top: 10%;
         font-size: 1.5rem;
+    }
+    .help-box {
+        left: 0%;
     }
 
     button {

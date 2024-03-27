@@ -15,7 +15,7 @@
         </div>
         <h2 id="name">ATM Guessing</h2>
         <div class="mainlogo"></div>
-        <button>Help</button>
+        <button onclick="showHelp()">Help</button>
         <div class="github-button">
             <a href="https://t.me/bnsl_boy" target="_blank"><button>contact</button></a>
         </div>
@@ -46,7 +46,21 @@
             <p>Your score: <span id="modalScore">0</span></p>
         </div>
     </div>
-
+    <div class="help-box" id="helpbox">
+        <div class="h-box">
+            <div class="greenbox"><input type="number" class="greenz"> <p>If the number is in its place, it will be displayed</p></div>
+            <div class="greenbox"><input type="number" class="yellowz"> <p>If the number is in the PIN code but not in its place.</p></div>
+            <div class="greenbox"><input type="number"> <p> If there is no such number , not use this digit again</p></div>
+        </div>
+        
+        <p><h2>For example</h2> You entered PIN 1234 .
+            and saw the <br><br><input type="number" value="1"> <input type="number" class="greenz" value="2"> <input type="number" class="yellowz" value="3"> <input type="number" class="yellowz" value="4"><br><br>
+            So there are no digits 1 in the PIN code, digit 2 is in its place and digits 3 and 4 are out of place. <br>
+            Try to enter 3245 <br>
+            Getting an answer <br><input type="number" value="3" class="greenz"> <input type="number" class="greenz" value="2"> <input type="number" class="greenz" value="4"> <input type="number" value="5"><br><br>
+            The first three digits we guessed, it remains to determine the last digit.</p>
+        <button onclick="hideHelp()">Back</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

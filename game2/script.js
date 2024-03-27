@@ -64,7 +64,7 @@ function checkGuess() {
                 document.getElementById("pinInput" + (i + 1)).style.backgroundColor = "#27ae60";
                 document.getElementById("pinInput" + (i + 1)).style.color = "white";
             } else if (scPin.includes(pin[i])) { 
-                document.getElementById("pinInput" + (i + 1)).style.backgroundColor = "#d4ff00";
+                document.getElementById("pinInput" + (i + 1)).style.backgroundColor = "#F5DD61";
             }else{
                 document.getElementById("pinInput" + (i + 1)).style.backgroundColor = "white";
             }
@@ -133,7 +133,7 @@ function handlePinInput(currentInput, previousInput) {
             case 'Enter':
                 checkGuess();
                 break;
-            case 'Backspace':
+            case 'Backspace0':
                 focusPreviousInput(currentInput, previousInput);
                 break;
             default:
@@ -157,7 +157,13 @@ pinInput3.addEventListener('keyup', handlePinInput(pinInput3, pinInput2, pinInpu
 pinInput2.addEventListener('keyup', handlePinInput(pinInput2, pinInput1, pinInput3));
 pinInput1.addEventListener('keyup', handlePinInput(pinInput1, null, pinInput2));
 
-
+function showHelp() {
+    document.getElementById("helpbox").style.display = "block";
+}
+function hideHelp() {
+    document.getElementById("helpbox").style.display = "none";
+    
+}
 function main_menu(){
     window.location.href = '../index.html'
 }
