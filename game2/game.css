@@ -125,7 +125,8 @@ input {
     outline: none;
     transition: border-color 0.3s ease;
     color: #333; 
-    background-color: #fff; 
+    background-color: #fff;
+    text-align: center; 
 }
 /* Remove arrows on number input */
 input::-webkit-inner-spin-button,
